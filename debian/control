@@ -1,0 +1,20 @@
+Source: ucimf-chewing
+Section: utils
+Priority: optional
+Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
+Uploaders: Aron Xu <aron@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, pkg-config,
+ libucimf-dev, libchewing3-dev
+Standards-Version: 3.9.2
+Homepage: http://code.google.com/p/ucimf/
+Vcs-Git: git://git.debian.org/pkg-ime/ucimf-chewing.git
+Vcs-Browser: http://git.debian.org/?p=pkg-ime/ucimf-chewing.git
+
+Package: ucimf-chewing
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: ucimf wrapper for Chewing input method
+ ucimf-chewing is a wrapper for Chewing input method for the
+ Linux framebuffer console input method framework.
+ .
+ Chewing is an intelligent phonetic input method for Chinese.

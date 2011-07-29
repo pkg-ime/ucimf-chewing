@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+LDFLAGS += -Wl,--as-needed
+%:
+	dh $@ 
+override_dh_auto_install:
+	dh_auto_install
+	find . -name *.la -type f -exec rm -f {} \;
+
